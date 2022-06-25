@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAU</title>
     <link rel="icon" href="images/images__3__1-removebg-preview.png">
+    <link rel="stylesheet" href="sign in.css">
 </head>
 <body>
+   <div class="main-div">
     <form action="">
+        <img src="images/images__3__1-removebg-preview.png" alt="" width="80">
+        <span>DAU</span>
         <input type="email" id="mail" placeholder="Enter email address" required>
         <input type="password" id="word" placeholder="At least 8 character" minlength="8" required>
         <div id="good"></div>
     </form>
-    <button onclick="thirdPage()">Sign In </button>
+    <button onclick="thirdPage()" id="but">Sign In </button>
+    <p><a href="">Forgotten Password?</a></p>
+   </div>
     <script src="sign in.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
