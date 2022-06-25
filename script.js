@@ -19,7 +19,7 @@ function nextPage(){
     lastname.value = " ";
     email.value = " ";
     password.value = " ";
-    if (firstInput === " " && secondInput === " " && thirdInput === " " && fourthInput === " ") {
+    if (firstInput == " " && secondInput == " " && thirdInput == " " && fourthInput == " ") {
         dis.innerText = "Please fill out dis form with correct input"
     }
     window.location.href = "sign in.html"
