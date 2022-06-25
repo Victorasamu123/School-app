@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="di">
+        <h1 id="DD">DAU</h1>
+    </div>
+    <h1 id="D" >Dev Avanin University Grading System</h1>
+    <marquee behavior="" direction="left" id="aaa">Want to know your faith Enter your score then</marquee>
+    <input type="number" id="grade" placeholder="Enter Your Score" class="in">
+    <div class="div1" id="result"></div>
+    <button class="but" onclick="checkScores()">Submit</button>
+    <script>
+        function checkScores(){
+            var score = grade.value
+            var re = result.value
+            if(score<40&&score>=1){
+               result.innerText="F-Fail"
+               result.style.color="red"
+        }else if(score>=40&&score<=44){
+            result.innerText="E-Poor"
+            result.style.color="orange"
+        }else if(score>=45&&score<=49){
+            result.innerText="D-Pass"
+            result.style.color="yellow"
+        }else if(score>=50&&score<=59){
+            result.innerText="C-Good"
+            result.style.color="blue"
+        }else if(score>=60&&score<=69){
+            result.innerText="B-Very-good"
+            result.style.color="indigo"
+        }else if(score>=70&&score<=100){
+            result.innerText="A-Excellent"
+            result.style.color="darkblue"
+        }else if(score>100){
+            alert("Please Enter Correct Score")
+            result.innerText="invalid score"
+            result.style.color="red"
+        }else if(score<=0){
+            alert("Please Enter Correct Score")
+            result.innerText="invalid score"
+            result.style.color="red"
+        }
+
+        }
+    </script>
+</body>
+</html>

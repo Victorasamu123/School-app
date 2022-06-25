@@ -4,6 +4,7 @@ function nextPage(){
     let secondInput = document.getElementById("lastname").value;
     let thirdInput = document.getElementById("email").value;
     let fourthInput = document.getElementById("password").value;
+    let dis = document.getElementById("checkOut")
 
     let newStudent = {
         firstName:firstInput,
@@ -18,6 +19,9 @@ function nextPage(){
     lastname.value = " ";
     email.value = " ";
     password.value = " ";
+    if (firstInput === " " && secondInput === " " && thirdInput === " " && fourthInput === " ") {
+        dis.innerText = "Please fill out dis form with correct input"
+    }
     window.location.href = "sign in.html"
 }
 

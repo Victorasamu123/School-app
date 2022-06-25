@@ -7,7 +7,7 @@ function thirdPage(){
 
     for (let index = 0; index < newValue.length; index++) {
         if (nextValue == newValue[index].email && nnValue == newValue[index].passWord) {
-            window.location.href = "table.html"
+            window.location.href = "dash.html"
         }else{
             div.innerText = "invalid input"
         }
