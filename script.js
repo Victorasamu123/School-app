@@ -21,12 +21,20 @@ function nextPage(){
     password.value = " ";
     if (firstInput == " " && secondInput == " " && thirdInput == " " && fourthInput == " ") {
         dis.innerText = "Please fill out dis form with correct input"
+    }else{
+        window.location.href = "sign in.html"
     }
-    window.location.href = "sign in.html"
+    
 }
 
 function getPreviousValue(){
     if (localStorage.localstudentPortal) {
         studentPortal = JSON.parse(localStorage.localstudentPortal)
     }
+}
+function goToIn() {
+    window.location.href = "sign in.html"
+}
+function goToUp(){
+    window.location.href = "index.html"
 }

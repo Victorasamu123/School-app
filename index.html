@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DAU</title>
+    <link rel="icon" href="images/images__3__1-removebg-preview.png">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body onload="getPreviousValue()">
-    <nav>helo</nav>
+    <nav>
+    <div class="nav-first-div">
+        <img src="images/images__3__1-removebg-preview.png" alt="" width="80">
+        <span>DAU</span>
+    </div>
+    <div>
+        <button class="nav-button1" onclick="goToIn()">Sign In</button>
+        <button class="nav-button2" onclick="goToUp()">Sign Up</button>
+    </div>
+    </nav>
+   <div class="body-first-div">
     <form action="">
+        <img src="images/images__3__1-removebg-preview.png" alt="" width="80" id="img">
         <input type="text" id="firstname" placeholder="Enter your firstname" required>
         <input type="text" id="lastname" placeholder="Enter your lastname" required>
         <input type="email" id="email" placeholder="Enter email address" required>
         <input type="password" id="password" placeholder="At least 8 character" minlength="8" required>
         <div id="checkOut"></div>
     </form>
-    <button onclick="nextPage()">Sign in</button>
+    <button onclick="nextPage()" id="but">Sign up</button>
+    <p>Already Have An Account?<a href="sign in.html">Sign in instead</a></p>
+   </div>
     <script src="script.js"></script>
 </body>
 </html>
