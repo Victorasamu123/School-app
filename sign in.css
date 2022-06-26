@@ -1,5 +1,8 @@
 body{
     background-color: #ecf0f3;
+    background-image: url(images/images\ \(6\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .main-div{
     position: relative;
