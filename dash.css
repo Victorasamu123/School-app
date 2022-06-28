@@ -37,6 +37,11 @@ span{
     top:35px;
     right: 20px;
 }
+.nav-button2:hover{
+    background-color: white;
+    color: green;
+    
+}
 ul{
     display: flex;
     position: absolute;
@@ -55,4 +60,8 @@ a{
     text-decoration: none;
     color: green;
     font-weight: 600;
+}
+a:hover{
+    color: black;
+    font-size: 25px;
 }
